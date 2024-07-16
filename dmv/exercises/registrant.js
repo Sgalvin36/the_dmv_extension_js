@@ -22,8 +22,21 @@ function earnPermit(registrant) {
   return statement;
 }
 
-module.exports.createRegistrant = createRegistrant;
-module.exports.earnPermit = earnPermit;
+function takeLicenseExam(registrant) {
+  let statement;
+  if (registrant.permit) {
+    statement = "Great job! You can take your test.";
+  } else {
+    statement = "Sorry, you need to earn a permit first."
+  }
+  return statement
+}
+
+module.exports = {
+  createRegistrant: createRegistrant,
+  earnPermit: earnPermit,
+  takeLicenseExam: takeLicenseExam
+};
   // createRegistrant,
   // earnPermit,
   // takeLicenseExam
