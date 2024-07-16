@@ -1,7 +1,12 @@
+function createRegistrant(name, age) {
+  return {
+    name: name,
+    age: age 
+  };
+}
 
 
-module.exports = {
+module.exports.createRegistrant = createRegistrant;
   // createRegistrant,
   // earnPermit,
   // takeLicenseExam
-}
