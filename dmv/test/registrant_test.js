@@ -10,21 +10,21 @@ describe('Registrant', function() {
     assert.equal(registrant.age, 16);
   });
 
-  it.skip('should be able to have a different name and age', function() {
+  it('should be able to have a different name and age', function() {
     var registrant = createRegistrant('Louisa', 24);
 
     assert.equal(registrant.name, 'Louisa');
     assert.equal(registrant.age, 24);
   });
 
-  it.skip('should default registrants to not having a permit', function() {
+  it('should default registrants to not having a permit', function() {
     var registrant = createRegistrant('Louisa', 24);
 
     assert.equal(registrant.permit, false);
 
   });
 
-  it.skip('should set permit based on what argument is passed in', function() {
+  it('should set permit based on what argument is passed in', function() {
     var registrant = createRegistrant('Anita', 18, true);
 
     assert.equal(registrant.permit, true);
